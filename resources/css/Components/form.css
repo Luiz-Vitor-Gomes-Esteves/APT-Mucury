@@ -1,0 +1,70 @@
+/*MENU*/
+.Menu-Form {
+    width: 100%;
+    background-color: var(--cor-fundo-primaria);
+}
+
+.Menu-Form a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 1px solid var(--cor-titulo-borda-form);
+    border: 2px;
+}
+.Option-Menu-Form.ativo{
+    background-color: var(--cor-fundo-form);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: var(--cor-texto);
+}
+.Menu-Form a{
+    color: var(--cor-fundo-form);
+}
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+/*CÓDIGO*/
+.Mcard{
+    align-content: center;
+}
+.Label-Form{
+    color: var(--cor-titulo-form);
+    font-size: 22px;
+}
+
+.Cadastrar-Form{
+    background-color: var(--cor-fundo-form);
+    height: 850px;
+    width: 90%; /* Ajuste a largura conforme necessário */
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column; /* Alinhar elementos verticalmente */
+    justify-content: flex-start;
+    margin-left: 80px;
+}
+
+.Form-Padrao{
+    width: 100%; /* Ajuste a largura conforme necessário */
+    padding: 20px; /* Adicionar espaço interno */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Page-Form{
+    justify-content: flex-start;
+    background-color: var(--for-fundo-form);
+}
+

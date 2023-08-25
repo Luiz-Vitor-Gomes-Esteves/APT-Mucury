@@ -1,0 +1,15 @@
+.Button-Form{
+    background: var(--cor-primaria);
+    padding: 10px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    font-size: 19px;
+    outline: none;
+    color: var(--cor-texto);
+}
+.Button-Form:hover{
+    background-color: var(--cor-terciaria);
+}
+.Button-Form:focus {
+    outline: none; /* Remover contorno ao focar */
+}

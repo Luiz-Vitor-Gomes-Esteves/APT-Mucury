@@ -1,0 +1,11 @@
+.Graficos-Home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Chart{
+    padding: 20px;
+    border-radius: 4px solid #8f8e8e71;
+    border: 5px;
+    border: 4px;
+    max-width: 500px;
+}

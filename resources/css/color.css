@@ -1,0 +1,36 @@
+:root {
+    --cor-primaria: #007bff; /* Defina a cor primária */
+    --cor-secundaria: #eef5fd;
+    --cor-terciaria: #0063ce;
+    --cor-fundo-primaria:rgb(196, 195, 195);
+    --cor-fundo-primaria:rgb(6, 81, 243);
+    --cor-fundo-secundaria: rgb(255, 255, 255);
+    --cor-texto: #000000; /* Defina a cor do texto */
+    --cor-titulo-form: #000;
+    --cor-fundo-form:#fff;
+}
+
+:root {
+    --cor-primaria-menu:#1505fa;
+    --cor-secundaria-menu:#516af8;
+    --cor-fundo-menu:rgb(63, 63, 63);
+    --cor-icone-menu: #fff;
+}
+
+.dark-mode
+{
+    --cor-primaria: rgb(63, 63, 63); /* Defina a cor primária */
+    --cor-secundaria: rgb(63, 63, 63)d;
+    --cor-terciaria:rgb(63, 63, 63);
+    --cor-fundo-primaria:rgb(63, 63, 63);
+    --cor-fundo-primaria:rgb(63, 63, 63);
+    --cor-fundo-secundaria: rgb(63, 63, 63);
+    --cor-texto: rgb(63, 63, 63); /* Defina a cor do texto */
+    --cor-titulo-form: rgb(63, 63, 63);
+    --cor-fundo-form:rgb(63, 63, 63);
+    --cor-primaria-menu:rgb(63, 63, 63);
+    --cor-secundaria-menu:rgb(63, 63, 63);
+    --cor-fundo-menu:rgb(63, 63, 63);
+    --cor-icone-menu: rgb(63, 63, 63);
+}
+

@@ -1,0 +1,90 @@
+.menu-principal{
+    width: 300px;
+    height: 100%;
+    background: #fa0505;
+}
+nav.menu-principal{
+    width: 80px;
+    height: 100%;
+    background-color: var(--cor-fundo-menu);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 var(--cor-primaria-menu);
+/*Trava o esquema de rolagem*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+nav.menu-principal.expandir,
+nav.menu-principal:hover {
+    width: 230px;
+    transition: .25s;
+}
+nav.menu-principal.expandir #btn-exp{
+    font-size: 40px;
+    transition: .5s;
+    color:var(--cor-icone-menu);
+}
+.menu-referencia{
+    width: 100%;
+    padding-left: 10px;
+}
+.menu-referencia  i{
+    color:var(--cor-icone-menu);
+    font-size: 30px;
+    cursor: pointer; /*Torna clicável*/
+}
+nav.menu-principal ul{
+    height: 100%;
+    list-style-type: none;
+    padding: 40px 0 40px 0px;
+}
+ul li.menu-item a{
+    color:var(--cor-icone-menu);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 5%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    transition: .8s;
+}
+ul li.menu-item a:hover{
+    background-color: var(--cor-primaria-menu);
+}
+ul li.menu-item a .text-link{
+    margin-left: 22px;
+    transition: 1s;
+}
+nav.menu-principal.expandir .text-link{/*Sempre o o menu tiver a classe expandir, aconteça algo com txtlink*/
+    margin-left: 20px;
+}
+ul li.menu-item a .icon{
+    font-size: 35px;
+    margin-left: 10px;
+}
+/*APÓS O EFEITO DO JAVASCRIPT*/
+ul li.ativo{ 
+    background-color: var(--cor-secundaria-menu);
+}
+
+@media screen and (max-width: 767px) {
+    nav.menu-principal{
+        width: 70px;
+    }
+}
+/*Scroll*/
+nav.menu-principal ul {
+    overflow-y: scroll; /* Adiciona um scrollbar vertical à lista */
+    overflow-x: hidden; /* Esconde o scrollbar horizontal da lista */
+}
+
+/* Personalização do scrollbar */
+nav.menu-principal ul::-webkit-scrollbar {
+    width: 4px; /* Largura do scrollbar */
+}
+nav.menu-principal ul::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px; /* Borda arredondada */
+}
+

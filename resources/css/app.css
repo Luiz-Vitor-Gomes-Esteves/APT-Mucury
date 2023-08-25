@@ -1,0 +1,22 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './global.css';
+@import './registro.css';
+@import './menu.css';
+@import './color.css';
+
+/*Pages*/
+@import './Paginas/home.css';
+@import './Paginas/bus.css';
+@import './Paginas/route.css';
+@import './Paginas/mcard.css';
+@import './Paginas/event.css';
+
+/*Componentes*/
+
+@import './Components/button.css';
+@import './Components/input.css';
+@import './Components/header.css';
+@import './Components/form.css';

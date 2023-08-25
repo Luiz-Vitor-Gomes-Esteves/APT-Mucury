@@ -1,0 +1,27 @@
+.Header{
+    margin-top: 0px;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Header-Logo-User{
+    padding-right: 10px;
+    height: 90px;
+}
+
+.Header-Logo-User img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid rgb(170, 170, 170);
+    border-radius: 20000px;
+}
+.Header-Logo-Enterprise{
+    height: 100%;
+}
+.Header-Logo-Enterprise img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(170, 170, 170);
+}

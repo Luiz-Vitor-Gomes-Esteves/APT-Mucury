@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.Standart-Background{
+    justify-content: center; /* Alinha horizontalmente no centro */
+    background-color: var(--cor-fundo-primaria);
+    margin-left: 85px; /* Distanciar do menu */
+}
