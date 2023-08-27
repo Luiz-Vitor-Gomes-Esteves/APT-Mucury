@@ -37,3 +37,5 @@ use Illuminate\Support\Facades\Route;
     Route::get('/Config',[ConfigController::class, 'index'])->name('Config.index');
     Route::post('/Config',[ConfigController::class, 'register'])->name('Config.register');
     Route::post('/Config/up',[UserController::class, 'update'])->name('User.update');
+
+    //@include('./charts/Mcard-Type', ['chartData' => $mcardChartData])

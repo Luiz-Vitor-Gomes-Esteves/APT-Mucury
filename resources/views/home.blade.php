@@ -24,7 +24,7 @@
 
         <div class="Graficos-Home">
             <div class="Chart">
-                @include('./charts/Mcard-Type', ['chartData' => $mcardChartData])
+                
             </div>
             <div class="Chart">
                 @include('./charts/Event-Date', ['chartData' => $eventsChartData])
