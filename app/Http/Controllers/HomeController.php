@@ -66,8 +66,7 @@ class HomeController extends Controller
         }
        //dd($completeChartData);
 
-        //return $completeChartData;
-        return $chartData;
+        return $completeChartData;
 
     }
 
