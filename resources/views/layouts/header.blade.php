@@ -1,7 +1,8 @@
 <header class="Header">
     <div class="Header-Logo-Enterprise">
             @if ($logo)
-                <img src="{{ asset('logos/' . $logo->last()) }}" alt="logo" width="100">
+                <!--<img src="{{-- asset('logos/' . $logo->last()) --}}" alt="logo" width="100">-->
+                <img src="{{ secure_asset('logos/' . $logo->last()) }}" alt="logo" width="100">
             @endif
     </div>
     <div class="Header-Logo-User">
