@@ -39,7 +39,7 @@ class HomeController extends Controller
     private function getGraphicsEvents()
     {
         $chartData = [];
-/*
+
         $eventDateCounts = DB::table('events')
             ->select(DB::raw('YEAR(date) as year, MONTH(date) as month'), DB::raw('COUNT(*) as event_count'))
             ->groupBy('year', 'month')
@@ -65,7 +65,7 @@ class HomeController extends Controller
             $completeChartData[] = [$monthName, $chartData[$monthIndex]];
         }
        //dd($completeChartData);
-*/
+
         //return $completeChartData;
         return $chartData;
 
@@ -74,7 +74,7 @@ class HomeController extends Controller
     private function getGraphicsUsers()
     {
         $chartData = [];
-/*
+
         $usersCountsByMonth = DB::table('users')
             ->select(DB::raw('YEAR(created_at) as year, MONTH(created_at) as month'), DB::raw('COUNT(*) as user_count'))
             ->groupBy('year', 'month')
@@ -85,7 +85,7 @@ class HomeController extends Controller
         foreach ($usersCountsByMonth as $userCount) {
             $chartData[] = [sprintf('%04d-%02d', $userCount->year, $userCount->month), (int) $userCount->user_count];
         }
-*/
+
         return $chartData;
     }
 

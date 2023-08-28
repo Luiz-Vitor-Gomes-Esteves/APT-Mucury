@@ -18,7 +18,7 @@
                 <div class="card-body p-5 text-center">
 
                   <div class="mb-md-5 mt-md-4 pb-5">
-
+                    <h1 class="fw-bold mb-2 text-uppercase">ATP-Mucury</h1>
                     <h2 class="fw-bold mb-2 text-uppercase">Cadastrar</h2>
                     <p class="text-white-50 mb-5">Insira seu nome, email e senha</p>
 <!--Entrada-->
