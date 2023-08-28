@@ -6,6 +6,6 @@
             @endif
     </div>
     <div class="Header-Logo-User">
-        <img src="https://i.redd.it/e4mus9ykczq51.jpg">
+        <img src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png">
     </div>
 </header>
