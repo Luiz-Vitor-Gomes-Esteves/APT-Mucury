@@ -23,7 +23,7 @@ class HomeController extends Controller
     private function getGraphicsMCard()
     {
         $chartData = []; // Inicializa um array vazio para os dados do gráfico
-/*
+
         $typesCounts = DB::table('mcard_types') //Seleciona mcard
             ->select('type', DB::raw('COUNT(*) as count')) //Conta quantos tipos
             ->groupBy('type') // Qual grupo
@@ -32,7 +32,7 @@ class HomeController extends Controller
         foreach ($typesCounts as $typeCount) {
             $chartData[] = [$typeCount->type, (int) $typeCount->count];
         }//Até quanto puder, preenche o array que criei com o nome do tipo e a quantidade
-*/
+
         return $chartData;
     }
 
