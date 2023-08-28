@@ -2,7 +2,10 @@
 
 {{--@vite(['resources/css/app.css'])--}} <!--importar css com vite-->
 
-<link rel="stylesheet" href="{{ asset('build/assets/app-5d141e5e.css') }}">
+
+<link rel="stylesheet" href="{{ secure_asset('build/assets/app-5d141e5e.css')}}">
+
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!--icones boostrap-->
 
