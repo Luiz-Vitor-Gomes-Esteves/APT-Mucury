@@ -25,4 +25,5 @@ class BusController extends Controller
         Bus::create($input);
         return Redirect::route('Buses.index');
     }
+
 }

@@ -6,14 +6,18 @@ use App\Models\Config;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Storage;
 
 class ConfigController extends Controller
 {
     public function index()
     {
         $logo = Config::pluck('logo');
+        $url = Storage::url($logo->first());
+        //dd(asset('storage/' . 'logos/UiQ2Rwy0KcxabUrGMUi3UN0xWWKcOuubU9fEVtJ5.jpg'));
+
         return view('config',[
-            'logo'=>$logo,
+            'logo'=>$url,
         ]);
     }
 
@@ -29,14 +33,8 @@ class ConfigController extends Controller
             'color' => $request->input('color'),
         ];
 
-        if ($request->hasFile('logo')) {
-            $logo = $request->file('logo');
-            $nomeLogo = time() . '.' . $logo->getClientOriginalExtension();
-            $caminhoLogo = public_path('logos/' . $nomeLogo);
-            $logo->move(public_path('logos'), $nomeLogo);
-
-            $dados['logo'] = $nomeLogo;
-        }
+        $uploaded = $request->file('logo')->store('logos');
+        $dados['logo'] = $uploaded;
 
         Config::create($dados);
 
@@ -44,3 +42,14 @@ class ConfigController extends Controller
     }
 
 }
+
+
+/*
+        if ($request->hasFile('logo')) {
+            $logo = $request->file('logo');
+            $nomeLogo = time() . '.' . $logo->getClientOriginalExtension();
+            $logo->move(public_path('logos'), $nomeLogo);
+
+            $dados['logo'] = $nomeLogo;
+        }
+*/
