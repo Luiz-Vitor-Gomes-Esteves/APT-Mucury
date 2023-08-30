@@ -1,7 +1,7 @@
 <header class="Header">
     <div class="Header-Logo-Enterprise">
             @if ($logo)
-            <img src="{{asset('storage/' . 'logos/UiQ2Rwy0KcxabUrGMUi3UN0xWWKcOuubU9fEVtJ5.jpg')}}" alt="logo" width="100">
+            <!--img src="{{--asset('storage/' . 'logos/UiQ2Rwy0KcxabUrGMUi3UN0xWWKcOuubU9fEVtJ5.jpg')--}}" alt="logo" width="100"-->
             <img src="{{secure_asset('storage/' . 'logos/UiQ2Rwy0KcxabUrGMUi3UN0xWWKcOuubU9fEVtJ5.jpg')}}" alt="logo" width="100">
                 {{-- 'logos/'.$logo --}}
             @endif
