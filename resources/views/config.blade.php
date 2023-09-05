@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ATPMucury | Config</title>
     @include('./layouts/css')
 </head>
+
+@include('./layouts/head')
+
 <body class="Standart-Background">
     @include('./layouts/menu')
 
@@ -67,6 +70,7 @@
                 <br>
                 <button class="Button-Form" type="submit">Salvar</button>
             </form>
+
         </div>
     </div>
 

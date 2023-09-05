@@ -45,7 +45,7 @@
     background-color: var(--cor-fundo-form);
     height: 850px;
     width: 90%; /* Ajuste a largura conforme necessário */
-    border-radius: 50px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column; /* Alinhar elementos verticalmente */
     justify-content: flex-start;

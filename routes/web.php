@@ -6,6 +6,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\McardController;
 use App\Http\Controllers\RouteController;
+use App\Http\Controllers\SupportController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 
     Route::get('/register',[UserController::class, 'indexRegister']);
     Route::post('/register',[UserController::class, 'register'])->name('User.register');
+
+    Route::get('/user/config',[UserController::class, 'index'])->name('User.index');
+    Route::post('user/update',[UserController::class, 'update'])->name('User.update');
+    Route::post('user/delete',[UserController::class, 'delete'])->name('User.delete');
 
 //Home
     Route::get('/', [HomeController::class, 'showAllGraphics'])->name('Home.show');
@@ -38,4 +43,5 @@ use Illuminate\Support\Facades\Route;
     Route::post('/Config',[ConfigController::class, 'register'])->name('Config.register');
     Route::post('/Config/up',[UserController::class, 'update'])->name('User.update');
 
-    
+//Support
+    Route::get('/Support',[SupportController::class, 'index'])->name('Support.index');

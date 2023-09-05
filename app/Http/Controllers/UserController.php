@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Config;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -13,6 +14,12 @@ class UserController extends Controller
     public function indexLogin()
     {
         return view('auth/login');
+    }
+    public function index(){
+        $logo = Config::pluck('logo');
+        return view('userConfig',[
+            'logo'=>$logo,
+        ]);
     }
     public function login(Request $request)
     {
@@ -46,27 +53,28 @@ class UserController extends Controller
         $request->validate([
             'name' => 'required|string',
             'email' => 'email:rfc,dns',
-            'photo' => 'image',
+            //'photo' => 'image',
         ]);
 
-        $namePhoto = null;
-
-        if ($request->hasFile('photo')) {
-            $photo = $request->file('photo');
-            $namePhoto = time() . '.' . $photo->getClientOriginalExtension();
-            $photo->move(public_path('photos'), $namePhoto);
-        }
+        //$namePhoto = null;
 
         // Atualização dos dados do usuário
-        User::updated([
-            //'name' => $request->input('name'),
-            //'email' => $request->input('email'),
-            //'photo' => $namePhoto,
-            //'CPF' => $request->input('CPF'),
+        User::updateOrCreate([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+           // 'photo' => $namePhoto,
+            'CPF' => $request->input('CPF'),
         ]);
 
         return Redirect::route('User.login');
 
+    }
+    public function delete(Request $request){
+        $user = User::find($request);
+
+        $user->delete();
+        User::destroy($request);
+        //return Redirect::route('User.login');
     }
 
 }

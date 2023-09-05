@@ -33,7 +33,19 @@
                 <span class="text-link">Eventos</span>
             </a>
         </li>
-        <li class="menu-item">
+        <li class="menu-item {{ Route::is('User.index') ? 'ativo' : '' }}">
+            <a href="{{route('User.index')}}" >
+                <span class="icon"><i class="bi bi-people-fill"></i></span><!--id de expandir-->
+                <span class="text-link">Usuários</span>
+            </a>
+        </li>
+        <li class="menu-item {{ Route::is('Suport.index') ? 'ativo' : '' }}">
+            <a href="{{route('Support.index')}}" >
+                <span class="icon"><i class="bi bi-wechat"></i></span><!--id de expandir-->
+                <span class="text-link">Suporte</span>
+            </a>
+        </li>
+        <li class="menu-item {{ Route::is('Config.index') ? 'ativo' : '' }}">
             <a href="{{route('Config.index')}}">
                 <span class="icon"><i class="bi bi-gear"></i></span>
                 <span class="text-link">Configurações</span>
