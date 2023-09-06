@@ -4,7 +4,7 @@
 
 
 <link rel="stylesheet" href="{{ secure_asset('build/assets/app-2bbd61f2.css')}}">
-<link rel="stylesheet" href="{{ secure_asset('build/assets/app-0cc94de8.css')}}">
+<link rel="stylesheet" href="{{ secure_asset('build/assets/app-f66797fd.css')}}">
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!--icones boostrap-->

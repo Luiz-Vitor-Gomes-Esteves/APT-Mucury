@@ -20,7 +20,6 @@
         </div>
 
 <!--Tipo-->
-
         <div class="Page-Form" id="icon1-content">
             <form method="post" class="Form-Padrao" action="{{route('Routes.register')}}">
                 @csrf <!-- Token CSRF para proteção contra ataques -->

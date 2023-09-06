@@ -171,7 +171,7 @@ final class RoutesTable extends PowerGridComponent
            Button::make('Edit', 'Editar')
                ->class('text-primary cursor-pointer bi bi-pencil-square px-2 mt-n1 ')
                ->target('')
-               ->route('Routes.update', ['id' => 'id'])
+               ->route('Routes.update', ['id' => 'id', 'name' => 'name', 'timeStart' => 'timeStart', 'timeEnd' => 'timeEnd'])
                ->method('put'),
 
            Button::make('destroy', 'Deletar')
