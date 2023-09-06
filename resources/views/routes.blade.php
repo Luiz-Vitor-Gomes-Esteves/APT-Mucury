@@ -20,7 +20,7 @@
         </div>
 
 <!--Tipo-->
-    <div class="Page-Form" id="icon1-content">
+
         <div class="Page-Form" id="icon1-content">
             <form method="post" class="Form-Padrao" action="{{route('Routes.register')}}">
                 @csrf <!-- Token CSRF para proteção contra ataques -->
@@ -45,11 +45,10 @@
                 <br>
                 <button class="Button-Form" type="submit">Registrar</button>
                 <br>
-        </form>
-
-
-
-
+            </form>
+        </div>
+        <div class="Page-Form" id="icon2-content">
+            <livewire:routes-table/>
         </div>
     </div>
 

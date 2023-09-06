@@ -30,7 +30,8 @@ use Illuminate\Support\Facades\Route;
 //Route
     Route::get('/routes',[RouteController::class, 'index'])->name('Routes.index');
     Route::post('/routes',[RouteController::class, 'register'])->name('Routes.register');
-
+    Route::put('/routes/update',[RouteController::class, 'update'])->name('Routes.update');
+    Route::delete('/routes/delete',[RouteController::class, 'delete'])->name('Routes.delete');
 //MCard
     Route::get('/MucuryCard',[McardController::class, 'index'])->name('Mcard.index');
     Route::post('/MucuryCard',[McardController::class, 'register'])->name('Mcard.register');

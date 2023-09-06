@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ATPMucury | Usuarios</title>
+    <title>ATPMucury | Uuarios</title>
     @include('../layouts/css')
 
 </head>
@@ -20,7 +20,8 @@
         </div>
 <!--Gráficos-->
     <div class="Page-Form" id="icon1-content">
-
+        
+    </div>
  @include('./layouts/js')
 </body>
 </html>
